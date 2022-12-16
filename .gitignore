@@ -1,0 +1,5 @@
+_ignore
+.vscode
+node_modules
+
+pass.js

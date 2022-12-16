@@ -1,0 +1,24 @@
+{
+  "name": "form-mailer",
+  "version": "1.0.0",
+  "description": "A simple NodeJS form mailer, using Nodemailer",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fizzstudio/form-mailer.git"
+  },
+  "author": "Doug Schepers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fizzstudio/form-mailer/issues"
+  },
+  "homepage": "https://github.com/fizzstudio/form-mailer#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.8.0"
+  }
+}
