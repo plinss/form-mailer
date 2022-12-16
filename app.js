@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }))
 
 // Server Start Notification
-app.listen(process.env.PORT || 30000, () => console.log("Server Started on port 30000..."));
+app.listen(process.env.PORT || 30000, '127.0.0.1', () => console.log("Server Started on port 30000..."));
 
 // Get Index Page Request
 app.get('/', function (req, res) {
