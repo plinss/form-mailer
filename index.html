@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📧</text></svg>">
+  <title>Survey Form</title>
+
+  <style>
+    article {
+      display: block;
+      margin-left: 1rem;
+    }
+
+    fieldset,
+    article {
+      border: none;
+      padding-bottom: 1.5rem;
+    }
+
+    legend,
+    article > label {
+      font-size: 1.3rem;
+    }
+
+    fieldset > div {
+      display: flex;
+      flex-direction: row;
+      align-items: middle;
+      justify-content: start;
+      gap: 1rem;
+    }
+
+    fieldset > div label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: middle;
+      justify-content: center;
+      background-color: hsl(208, 100%, 97%);
+      padding: 0.5rem;
+      border: hsl(209, 85%, 90%) solid 1px;
+      border-radius: 0.25rem;
+
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1 name="name">Chart Usability Study</h1>
+      
+      <p>Please answer the following questions on a scale of 1 to 7, where 1 means you strongly agree with the statement and 7 means you strongly disagree with the statement. If a question doesn't apply, please select "Not Applicable".</p>
+    </header>
+
+    <form action="/survey" method="post">
+
+      <section class="radio-group">
+
+        <fieldset>
+          <legend>Overall, I am satisfied with how easy it is to use this system.</legend>
+          <div>
+            <label><input type="radio" name="q_1" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_1" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_1" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_1" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_1" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_1" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_1" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_1" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>It was simple to use this system.</legend>
+          <div>
+            <label><input type="radio" name="q_2" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_2" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_2" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_2" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_2" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_2" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_2" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_2" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>I was able to complete the tasks and scenarios quickly using this system.</legend>
+          <div>
+            <label><input type="radio" name="q_3" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_3" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_3" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_3" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_3" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_3" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_3" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_3" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>I felt comfortable using this system.</legend>
+          <div>
+            <label><input type="radio" name="q_4" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_4" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_4" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_4" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_4" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_4" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_4" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_4" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>It was easy to learn to use this system.</legend>
+          <div>
+            <label><input type="radio" name="q_5" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_5" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_5" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_5" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_5" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_5" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_5" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_5" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>I believe I could become productive quickly using this system.</legend>
+          <div>
+            <label><input type="radio" name="q_6" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_6" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_6" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_6" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_6" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_6" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_6" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_6" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>The system gave error messages that clearly told me how to fix problems.</legend>
+          <div>
+            <label><input type="radio" name="q_7" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_7" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_7" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_7" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_7" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_7" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_7" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_7" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Whenever I made a mistake using the system, I could recover easily and quickly.</legend>
+          <div>
+            <label><input type="radio" name="q_8" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_8" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_8" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_8" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_8" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_8" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_8" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_8" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>The information (such as online help, on-screen messages, and other documentation) provided with this system was clear.</legend>
+          <div>
+            <label><input type="radio" name="q_9" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_9" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_9" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_9" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_9" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_9" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_9" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_9" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>It was easy to find the information I needed.</legend>
+          <div>
+            <label><input type="radio" name="q_10" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_10" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_10" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_10" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_10" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_10" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_10" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_10" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>The information was effective in helping me complete the tasks and scenarios.</legend>
+          <div>0
+            <label><input type="radio" name="q_11" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_11" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_11" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_11" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_11" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_11" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_11" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_11" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>The organization of information on the system screens was clear.</legend>
+          <div>
+            <label><input type="radio" name="q_12" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_12" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_12" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_12" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_12" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_12" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_12" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_12" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>The interface of this system was pleasant.</legend>
+          <div>
+            <label><input type="radio" name="q_13" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_13" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_13" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_13" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_13" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_13" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_13" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_13" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>I liked using the interface of this system.</legend>
+          <div>
+            <label><input type="radio" name="q_14" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_14" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_14" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_14" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_14" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_14" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_14" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_14" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>This system has all the functions and capabilities I expect it to have.</legend>
+          <div>
+            <label><input type="radio" name="q_15" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_15" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_15" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_15" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_15" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_15" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_15" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_15" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Overall, I am satisfied with this system.</legend>
+          <div>
+            <label><input type="radio" name="q_16" value="1"> <span>1: Strongly agree</span></label>
+            <label><input type="radio" name="q_16" value="2"> <span>2: Agree</span></label>
+            <label><input type="radio" name="q_16" value="3"> <span>3: Somewhat agree</span></label>
+            <label><input type="radio" name="q_16" value="4"> <span>4: Neither agree nor disagree</span></label>
+            <label><input type="radio" name="q_16" value="5"> <span>5: Somewhat disagree</span></label>
+            <label><input type="radio" name="q_16" value="6"> <span>6: Disagree</span></label>
+            <label><input type="radio" name="q_16" value="7"> <span>7: Strongly disagree</span></label>
+            <label><input type="radio" name="q_16" value="na"> <span>Not Applicable</span></label>
+          </div>
+        </fieldset>
+
+      </section>
+      
+      <section>
+        <fieldset>
+          <legend>Chart familiarity</legend>
+          <p>Please select all the chart types you were familiar with previous to using this system.</p>
+
+          <input id="bar" name="bar" type="checkbox"> <label for="bar">Bar chart</label><br>
+          <input id="line" name="line" type="checkbox"> <label for="line">Line chart</label><br>
+          <input id="pie" name="pie" type="checkbox"> <label for="pie">Pie chart</label><br>
+          <input id="histogram" name="histogram" type="checkbox"> <label for="histogram">Histogram</label><br>
+          <input id="scatter" name="scatter" type="checkbox"> <label for="scatter">Scatter plot</label><br>
+          <input id="heat" name="heat" type="checkbox"> <label for="heat">Heat map</label><br>
+          <input id="alluvial" name="alluvial" type="checkbox"> <label for="alluvial">Alluvial diagram</label>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Assistive Technologies</legend>
+          <p>Please select all assistive technologies you used with this system.</p>
+          <input id="screen_reader" name="screen_reader" type="checkbox"> <label for="screen_reader">Screen reader</label><br>
+          <input id="screen_magnifier" name="screen_magnifier" type="checkbox"> <label for="screen_magnifier">Screen magnifier</label><br>
+          <input id="dark_mode" name="dark_mode" type="checkbox"> <label for="dark_mode">Dark mode / high color contrast filter</label><br>
+          <input id="braille_display" name="braille_display" type="checkbox"> <label for="braille_display">Braille display</label><br>
+          <input id="voice_control_system" name="voice_control_system" type="checkbox"> <label for="voice_control_system">Voice control system</label><br>
+          <input id="other_at" name="other_at" type="checkbox"> <label for="other_at">Other</label>
+        </fieldset>
+
+        <article>        
+          <label for="screen_reader_used">Screen Reader</label>
+          <p>If you used a screen reader with the system, please select the screen reader.</p>
+          <select id="screen_reader_used" name="screen_reader_used">
+            <option value="jaws">JAWS</option>
+            <option value="nvda">NVDA</option>
+            <option value="narrator">Narrator</option>
+            <option value="voiceover">VoiceOver</option>
+            <option value="other_sr">other</option>
+          </select> 
+        </article>
+
+        <article>        
+          <label for="browser">Web Browser</label>
+          <p>Please select the web browser you used with the system.</p>
+          <select id="browser" name="browser">
+            <option value="safari">Apple Safari</option>
+            <option value="chrome">Google Chrome</option>
+            <option value="edge">Microsoft Edge</option>
+            <option value="internet_explorer">Microsoft Internet Explorer</option>
+            <option value="firefox">Mozilla Firefox</option>
+            <option value="other_browser">other</option>
+          </select> 
+        </article>
+      </section>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
